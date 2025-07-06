@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "expo": "^53.0.17",
+    "expo-manifests": "~0.16.6",
+    "react-native-arcore": "^0.0.1"
+  }
+}
