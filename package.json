@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "expo": "^53.0.17",
+    "@reactvision/react-viro": "^2.43.1",
+    "expo": "~52.0.43",
     "expo-manifests": "~0.16.6",
     "react-native-arcore": "^0.0.1"
   }
