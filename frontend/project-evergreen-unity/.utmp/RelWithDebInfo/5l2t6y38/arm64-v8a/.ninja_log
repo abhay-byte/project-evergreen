@@ -1,0 +1,10 @@
+# ninja log v5
+12	1820	1751982414816279998	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	5d92f84e4c1e2194
+4	1824	1751982414820130547	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	8cb078bd33ca86a4
+12	1844	1751982414843341078	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	a5524ff49e0db46d
+0	1874	1751982414872643407	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	b80f1fe53da2d325
+7	2126	1751982415126330774	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	7567bc7f483e83aa
+0	2238	1751982415233981771	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	7889b9fc45735a15
+4	2272	1751982415270423449	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	af7a8f653eb3c2cf
+13	2814	1751982415798694761	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	64bb5b149583fabe
+2815	2899	1751982415894281781	/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5l2t6y38/obj/arm64-v8a/libgame.so	86a6b82512c08158

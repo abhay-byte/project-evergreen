@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "GameActivity",
+					"jsonFile" : "directory-GameActivity-Debug-f368e6d506ea21fe2607.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "GameActivity",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Unity"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "game",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "game::@d02bb112ea9f9c2ed29f",
+					"jsonFile" : "target-game-Debug-2c6afff055884b65ac16.json",
+					"name" : "game",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/.utmp/Debug/6p1s2559/arm64-v8a",
+		"source" : "/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
