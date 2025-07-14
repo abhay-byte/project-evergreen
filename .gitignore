@@ -256,3 +256,5 @@ Packages/com.unity.package-manager-ui/
 .env
 
 # ========== End .gitignore ==========
+frontend/project-evergreen-unity/1.apk_Data
+frontend/project-evergreen-unity/.utmp
