@@ -10,7 +10,6 @@ Library: /home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity
 --branch-protection=Standard
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Temp/Burst
---debug=LineOnly
 --key-folder=/home/abhay/Unity/Hub/Editor/6000.1.3f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Library/Burst
 --output=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
@@ -129,7 +128,6 @@ Library: /home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity
 --branch-protection=Standard
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Temp/Burst
---debug=LineOnly
 --key-folder=/home/abhay/Unity/Hub/Editor/6000.1.3f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Library/Burst
 --output=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
@@ -148,7 +146,6 @@ Library: /home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity
 --branch-protection=Standard
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Temp/Burst
---debug=LineOnly
 --key-folder=/home/abhay/Unity/Hub/Editor/6000.1.3f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Library/Burst
 --output=/home/abhay/Projects/project-evergreen/frontend/project-evergreen-unity/Temp/BurstOutput/tempburstlibs/arm64-v8a/lib_burst_generated
