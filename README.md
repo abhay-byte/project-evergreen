@@ -1,6 +1,6 @@
 # Project Evergreen: The Walmart Smart Retail Ecosystem
 
- <!-- Optional: Create a cool banner for your project -->
+<!-- Optional: Create a cool banner for your project -->
 
 Welcome to the official repository for **Project Evergreen**! This project combines three powerful ideas into a single, cohesive retail platform designed to enhance customer experience, promote sustainability, and improve operational efficiency.
 
@@ -14,11 +14,11 @@ Our goal is to revolutionize the retail experience by integrating intelligent, v
 
 ## 🚀 Core Features
 
-This project is a monorepo containing two main parts: a **React Native frontend** and a **Node.js (Express) backend**.
+This project is a monorepo containing two main parts: a **Unity 6 frontend** and a **Node.js (Express) backend**.
 
-###  Frontend (Mobile App - `/frontend`)
-*   **GreenScore:** A gamified system that scores products on sustainability. Users earn points and rewards for making eco-friendly choices.
-*   **RoomScape AI:** An Augmented Reality feature that allows users to place photorealistic 3D models of furniture in their own room using their phone's camera.
+###  Frontend (Mobile App - `/unity-app`)
+*   **GreenScore:** A gamified system that scores products on sustainability. Users earn points and rewards for making eco-friendly choices, all presented in a rich, interactive UI.
+*   **RoomScape AI:** An Augmented Reality feature that allows users to place photorealistic 3D models of furniture in their own room. Built with Unity 6 and ARCore for high-fidelity rendering and stable world tracking.
 
 ### Backend (Server - `/backend`)
 *   **Waste-Knot:** An AI-driven logistics system that identifies near-expiry food items and automates the process of donating them to local charities.
@@ -30,7 +30,7 @@ This project is a monorepo containing two main parts: a **React Native frontend*
 
 | Area      | Technology                                                                                                    |
 | --------- | ------------------------------------------------------------------------------------------------------------- |
-| **Frontend**  | ![React Native](https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white) |
+| **Frontend**  | ![Unity](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white) ![ARCore](https://img.shields.io/badge/ARCore-F44336?style=for-the-badge&logo=google&logoColor=white) |
 | **Backend**   | ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) |
 | **Database**  | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) |
 | **DevOps**    | ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white) |
@@ -47,7 +47,9 @@ Follow these instructions to get a copy of the project up and running on your lo
 *   npm or yarn
 *   Git
 *   PostgreSQL server running locally
-*   React Native development environment (follow the [official guide](https://reactnative.dev/docs/environment-setup))
+*   **Unity Hub**
+*   **Unity Editor (Version 6 or later)**
+*   **Android Build Support** module in Unity (with SDK & NDK tools)
 
 ### Installation & Setup
 
@@ -79,19 +81,23 @@ Follow these instructions to get a copy of the project up and running on your lo
     ```
     The backend server should now be running on `http://localhost:3001` (or your configured port).
 
-3.  **Set up the Frontend:**
+3.  **Set up the Frontend (Unity):**
     ```bash
-    # Go to the frontend directory from the root
-    cd ../frontend
+    # (From the root directory)
+    # The Unity project is located in the /unity-app folder.
 
-    # Install dependencies
-    npm install
-
-    # Run on your simulator/emulator
-    npx react-native run-ios
-    # or
-    npx react-native run-android
+    # 1. Open Unity Hub
+    # 2. In the 'Projects' tab, click 'Open'.
+    # 3. Navigate to the cloned repository and select the 'unity-app' folder.
+    # 4. The project will open in the Unity Editor. This may take a few minutes
+    #    to import all assets and packages for the first time.
     ```
+    *   To run in the Editor for UI testing, press the **Play** button.
+    *   To deploy to a device for AR testing:
+        1.  Connect an [ARCore-supported](https://developers.google.com/ar/devices) Android device to your computer.
+        2.  In Unity, go to `File > Build Settings`.
+        3.  Ensure **Android** is the selected platform. If not, select it and click **Switch Platform**.
+        4.  Click **Build and Run**. Unity will build the `.apk` and install it on your connected device.
 
 ---
 
