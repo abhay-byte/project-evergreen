@@ -16,7 +16,7 @@ Our goal is to revolutionize the retail experience by integrating intelligent, v
 
 This project is a monorepo containing two main parts: a **Unity 6 frontend** and a **Node.js (Express) backend**.
 
-###  Frontend (Mobile App - `/unity-app`)
+### Frontend (Mobile App - `/unity-app`)
 *   **GreenScore:** A gamified system that scores products on sustainability. Users earn points and rewards for making eco-friendly choices, all presented in a rich, interactive UI.
 *   **RoomScape AI:** An Augmented Reality feature that allows users to place photorealistic 3D models of furniture in their own room. Built with Unity 6 and ARCore for high-fidelity rendering and stable world tracking.
 
@@ -82,16 +82,14 @@ Follow these instructions to get a copy of the project up and running on your lo
     The backend server should now be running on `http://localhost:3001` (or your configured port).
 
 3.  **Set up the Frontend (Unity):**
-    ```bash
-    # (From the root directory)
-    # The Unity project is located in the /unity-app folder.
+    
+    The Unity project is located in the `/unity-app` folder.
+    
+    1.  Open **Unity Hub**.
+    2.  In the 'Projects' tab, click **'Open'**.
+    3.  Navigate to the cloned repository and select the `unity-app` folder.
+    4.  The project will open in the Unity Editor. This may take a few minutes to import all assets and packages for the first time.
 
-    # 1. Open Unity Hub
-    # 2. In the 'Projects' tab, click 'Open'.
-    # 3. Navigate to the cloned repository and select the 'unity-app' folder.
-    # 4. The project will open in the Unity Editor. This may take a few minutes
-    #    to import all assets and packages for the first time.
-    ```
     *   To run in the Editor for UI testing, press the **Play** button.
     *   To deploy to a device for AR testing:
         1.  Connect an [ARCore-supported](https://developers.google.com/ar/devices) Android device to your computer.
