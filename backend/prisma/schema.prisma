@@ -1,0 +1,84 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  fullName  String?
+  role      Role     @default(shopper)
+  greenScore Int     @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  Charity   Charity?
+}
+
+model Product {
+  id                Int      @id @default(autoincrement())
+  name              String
+  description       String?
+  price             Float
+  imageUrl          String?
+  greenScore        Int
+  greenScoreDetails Json?
+  model3DUrl        String?
+  category          String?
+  inventoryQuantity Int      @default(0)
+  expiryDate        DateTime?
+
+  manifestItems     ManifestItem[] 
+}
+
+model Charity {
+  id         Int     @id @default(autoincrement())
+  name       String
+  address    String?
+  contactEmail String?
+  isVerified Boolean @default(false)
+  userId     Int     @unique
+  user       User    @relation(fields: [userId], references: [id])
+}
+
+model DonationManifest {
+  id             Int       @id @default(autoincrement())
+  status         ManifestStatus @default(pending_approval)
+  createdById    Int?
+  claimedById    Int?
+  scheduledPickup DateTime?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  items          ManifestItem[]
+}
+
+model ManifestItem {
+  id         Int @id @default(autoincrement())
+  manifest   DonationManifest @relation(fields: [manifestId], references: [id])
+  manifestId Int
+  product    Product @relation(fields: [productId], references: [id])
+  productId  Int
+  quantity   Int
+  @@unique([manifestId, productId])
+}
+
+enum Role {
+  shopper
+  store_manager
+  charity_rep
+  admin
+}
+
+enum ManifestStatus {
+  pending_approval
+  available
+  claimed
+  completed
+  cancelled
+}
